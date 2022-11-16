@@ -1,0 +1,94 @@
+No que consiste este trabalho?
+
+ 
+
+Na implementação e na apresentação de um programa em Python  que simule algumas das principais funcionalidades de um sistema de biblioteca. A ideia é implementar algoritmos com propósito de permitir ao usuário gerenciar sua situação de renovação e multa na biblioteca sem que seja necessário interagir com um bibliotecário.
+
+Cada grupo deverá criar uma empresa de software fictícia (com logomarca e nome) que será a desenvolvedora do programa de Empréstimos, (que também terá logomarca e nome). A ideia é que, além da implementação do programa, o grupo trace estratégias para vender seu produto ao público (isto é, os demais alunos da turma que estiverem assistindo à apresentação, além do professor). 
+
+ 
+
+O que deve ser feito?
+
+ 
+
+1) A implementação de um programa em Python que permita:
+
+Validação do Usuário;
+Listagem de Empréstimos.
+Listagem de Livros.
+ 
+
+2) A apresentação do programa desenvolvido, contendo:
+
+Nome da empresa e Logomarca (fictício);
+Breve história da empresa de tecnologia (fictício). Essa história fará parte do seu sistema também e deverá aparecer em um item de Menu Sobre ou About;
+Funcionários da empresa (fictício, onde cada membro do grupo deverá ter uma função na empresa, como desenvolvedor, analista de sistema, testador e etc);
+Breve explicação sobre o programa desenvolvido;
+Principais funcionalidades do programa (explicação do código fonte das principais funções implementadas – Sugiro usar prints de funções)
+ 
+
+A duração da apresentação pelo grupo não deverá ultrapassar 15 minutos. Tempo gasto a mais ou a menos acarretará em decréscimo da nota.
+
+ 
+
+Quais são as regras para a implementação?
+
+Como se trata de um trabalho final de disciplina, a ideia é que sejam utilizados todos os conceitos visto em sala de aula (isto é, as boas práticas na construção de algoritmos, uso de estruturas de dados corretas e demais estruturas apresentadas).
+
+Em resumo, deve-se obrigatoriamente usar:
+
+Boas práticas de implementação de algoritmos;
+Estruturas de Seleção, Repetição, Homogêneas e Heterogêneas;
+Arquivos.
+ 
+
+Quais são as entregas do trabalho?
+
+Cada grupo deverá entregar o projeto desenvolvido (isto é, todos os arquivos gerados na implementação) e os slides da apresentação do trabalho, EM PDF. Tudo deve ser enviado por e-mail até as 23:59 do dia da apresentação.
+
+ 
+
+O Negócio: Sistema de Biblioteca
+
+O programa deverá, inicialmente, verificar se o login e a senha informados pelo usuário são de algum usuário válido.
+O programa deverá negar acesso a usuários inválidos, mostrando mensagem de erro.
+O programa deverá permitir acesso a usuários válidos direcionando-os para o menu de opções.
+O sistema exibira todos os dados do Grupo que esta desenvolvendo bem como os dados da empresa fictícia  na tela. 
+ 
+
+Informações Técnicas:
+
+Junto a especificação deste trabalho está sendo enviado um anexo contendo alguns arquivos .txt e uma pasta que deve ser atualizada para ter o nome do programa criado pelo grupo. Eles, os txts, deverão ser manipulados pelo programa desenvolvido, sendo que cada um cumpre um objetivo em específico:
+
+pasta do projeto: lugar para colocar o código desenvolvido e os arquivos .txt.
+usuarios.txt: arquivo contendo informações dos usuários do sistema da biblioteca. Ele deverá ser usado na validação do acesso aos usuários. A estrutura deve seguir o exemplo enviado no anexo (na sequência: código do usuário, nome, tipo de usuário (Cliente ou Bibliotecario), login e senha de acesso).
+livros.txt: arquivo contendo as informações dos livros existentes na biblioteca (na sequência: código do livro, nome do livro e nome do autor).
+emprestimos.txt: arquivo que contêm as informações dos empréstimos realizados. (na sequência: código do empréstimo, código do cliente, código do livro e data do empréstimo). Vale lembrar que podem existir mais de uma e no máximo 3 (três) linhas de registro para um mesmo código de empréstimo.
+ 
+
+Extra:
+
+Opções do Menu Console:
+
+ 
+
+Primeiro menu:
+
+Informe o login do usuário:
+Informe a senha do usuário:
+ 
+
+Segundo menu, caso usuário válido (usuário TIPO: cliente):
+
+1 – Visualizar Empréstimos .
+
+1 – Visualizar Livros .
+
+3 – Sobre 
+
+4 – Sair
+
+ 
+
+Obs: além das opções, o menu do programa poderá conter outras informações, como nome da empresa desenvolvedora, nome do programa e etc. Também podem ser usados caracteres diversos para formatação da saída.

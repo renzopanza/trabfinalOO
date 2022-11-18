@@ -1,6 +1,6 @@
 import re
 
-def validarNome(nome):
+def nameValidation(nome):
     
 
     for i in nome:
@@ -8,7 +8,7 @@ def validarNome(nome):
         valid = re.match(r'[a-zA-Z]', i)
 
         while not valid:
-            return validarNome(input('Digite um nome valido: '))
+            return nameValidation(input('Digite um nome valido: '))
 
     return nome  
 

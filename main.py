@@ -11,7 +11,7 @@ try:
 
     if cadastrado == 'n':
 
-        nome = validarNome(str(input('Digite seu nome: ')))
+        nome = nameValidation(str(input('Digite seu nome: ')))
 
         telefone = telValidation(input('digite seu telefone no formato : '))
 
@@ -27,7 +27,7 @@ try:
 
         if cadastrado == 's':
 
-            nome = nomeValidation(str(input('digite seu nome: ')))
+            nome = nameValidation(str(input('digite seu nome: ')))
 
             cpf = cpfValidation(input('Digite seu cpf: '))
 

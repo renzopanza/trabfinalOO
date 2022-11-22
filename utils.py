@@ -1,7 +1,7 @@
 import re
+import hashlib
 
 def nameValidation(nome):
-    
 
     for i in nome:
 
@@ -29,11 +29,45 @@ def cpfValidation(cpf):
     padrao = "^[0-9]{3}[0-9]{3}[0-9]{3}[0-9]{2}$"
 
     valid = re.search(padrao, cpf)
-    
-    while not valid:
-        return cpfValidation(input('Digite um cpf valido: '))
 
-    return cpf
+    #inicio da copia
+    if valid:
+        valid = 0
+        for dig in range(0, 10):
+            valid += int(cpf[dig])
+            dig += 1
+        if int(cpf[0]) == valid / 11:
+            return cpfValidation(input('Digite um cpf valido: '))
+
+        # rotina de cálculos do dígito verificador do CPF
+        else:
+            # verificação do 10º dígito verificador
+            soma = 0
+            count = 10
+            for i in range(0, len(cpf)-2):
+                soma = soma + (int(cpf[i])*count)
+                i+=1
+                count-=1
+            dg1 = 11-(soma%11)
+            if dg1 >= 10:
+                dg1 = 0
+
+            # verificação do 11º dígito verificador
+            soma = 0
+            count = 10
+            for j in range(1, len(cpf)-1):
+                soma = soma + (int(cpf[j])*count)
+                j+=1
+                count-=1
+            dg2 = 11-(soma%11)
+            if dg2 >= 10:
+                dg2 = 0
+
+            # mensagem ao usuário
+            if int(cpf[9]) != dg1 or int(cpf[10]) != dg2:
+                return cpfValidation(input('Digite um cpf valido: '))
+            else:
+                return cpf
 
 
 def cepValidation(cep):
@@ -46,3 +80,10 @@ def cepValidation(cep):
         return cepValidation(input('Digite um cep valido: '))
     
     return cep
+
+
+def paswdValidation(paswd):
+    return paswd
+
+def paswdEncode(paswd):
+    return hashlib.sha256(paswd.encode('utf-8')).hexdigest()

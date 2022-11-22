@@ -1,35 +1,37 @@
 from usuarios import Usuario
 from utils import *
 import re
+import pandas as pd
 
-try:
+# try:
 
-    print('Bem vindo ao sistema de gerenciamento de biblioteca\n')
+print('Bem vindo ao sistema de gerenciamento de biblioteca\n')
 
-    cadastrado = input('voce ja tem conta?"Para sim, digite "s", para não digite "n": ')
+cadastrado = input('voce ja tem conta?"Para sim, digite "s", para não digite "n": ')
 
 
-    if cadastrado == 'n':
+if cadastrado == 'n':
 
-        nome = nameValidation(str(input('Digite seu nome: ')))
+    nome = nameValidation(str(input('Digite seu nome: ')))
 
-        telefone = telValidation(input('digite seu telefone no formato : '))
+    telefone = telValidation(input('digite seu telefone: '))
 
-        cpf = cpfValidation(input('Digite seu cpf: '))
+    cpf = cpfValidation(input('Digite seu cpf: '))
 
-        cep = cepValidation(input('Digite seu cep: '))
+    cep = cepValidation(input('Digite seu cep: '))
+    
+    senha = paswdValidation(input('Digite uma senha: '))
 
-        user = Usuario(nome, telefone, cpf, cep)
+    user = Usuario(nome, telefone, cpf, cep, senha)
 
-        print(user.cadastrarUsuario())
-        
-    else:
+    print(user.cadastrarUsuario())
+    
+else:
 
-        if cadastrado == 's':
+    if cadastrado == 's':
+        pass
 
-            nome = nameValidation(str(input('digite seu nome: ')))
 
-            cpf = cpfValidation(input('Digite seu cpf: '))
 
-except:
-    print('Voce cometeu algum erro, por favor tente novamente. Try funcionou')
+# except:
+#     print('Voce cometeu algum erro, por favor tente novamente. Try funcionou')

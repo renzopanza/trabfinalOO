@@ -1,4 +1,4 @@
-from usuarios import Usuario
+from usuario import Usuario
 
 class Emprestimo:
 

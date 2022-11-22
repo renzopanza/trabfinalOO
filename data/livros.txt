@@ -1,0 +1,15 @@
+{
+    "nome": "teste",
+    "telefone": "32994875487",
+    "cpf": "42484393016",
+    "cep": "45612315",
+    "paswd": "ebdf496f67651cddf6aaa1f0b130f1b99ce9e2e93dc2503d926edcff15aee668"
+},
+
+{
+    "nome": "vini",
+    "telefone": "32994784587",
+    "cpf": "42484393016",
+    "cep": "65897454",
+    "paswd": "4b4bd188986ffd60002ced05f73711ef306e4faf4661db9e80dfaede80874ba1"
+}

@@ -1,5 +1,6 @@
 import json
 from utils import *
+import pandas as pd
 
 class Usuario:
 
@@ -21,13 +22,16 @@ class Usuario:
         }
 
         dbUser = open("data/usuarios.txt", "a")
-        dbUser.write(str(userObject) + '\n')
-        return (f'{self.nome} cadastrado com sucesso! {self.telefone}')
+        json.dump(userObject, dbUser, indent=4)
+        dbUser.close()
+        return (f'{self.nome} cadastrado com sucesso!')
                 
         
-    def validarUsuario(self):
+    def validarUsuario(nome, passwd):
         dbUser = open("data/usuarios.txt", "r")
-        pass
-        
-        
-    
+        data = json.loads(dbUser.read())
+        teste = []
+        for i in data[0]:
+            teste.append(i)
+
+        return teste

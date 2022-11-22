@@ -1,7 +1,8 @@
-from usuario import Usuario
+from usuarios import Usuario
 from utils import *
 import re
 import pandas as pd
+
 # try:
 
 print('Bem vindo ao sistema de gerenciamento de biblioteca\n')
@@ -26,13 +27,15 @@ if cadastrado == 'n':
     print(user.cadastrarUsuario())
     
 else:
-
     if cadastrado == 's':
-        # nome = nameValidation(str(input('Digite seu nome: ')))
-        # senha = paswdValidation(input('Digite uma senha: '))
-        user = Usuario.validarUsuario('nome', 'senha')
-        print(user)
-
+        nome = nameValidation(str(input('Digite seu nome: ')))
+        senha = paswdValidation(input('Digite uma senha: '))
+        while not Usuario.validarUsuario(nome, senha):
+            print('Usuario ou senha incorretos!')
+            nome = nameValidation(str(input('Digite seu nome: ')))
+            senha = paswdValidation(input('Digite uma senha: '))
+        
+        
 
 
 

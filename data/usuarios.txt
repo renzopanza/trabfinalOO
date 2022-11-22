@@ -1,22 +1,2 @@
-[
-{
-    "nome": "teste",
-    "telefone": "32994875487",
-    "cpf": "42484393016",
-    "cep": "45612315",
-    "paswd": "ebdf496f67651cddf6aaa1f0b130f1b99ce9e2e93dc2503d926edcff15aee668"
-},
-{
-    "nome": "vini",
-    "telefone": "32994784587",
-    "cpf": "42484393016",
-    "cep": "65897454",
-    "paswd": "4b4bd188986ffd60002ced05f73711ef306e4faf4661db9e80dfaede80874ba1"
-}
-]{
-    "nome": "teste",
-    "telefone": "32988622008",
-    "cpf": "14915102696",
-    "cep": "36036080",
-    "paswd": "289160db0d9f39f9ae1754c4ec9c16f90b50e32e09c5fb5481ae642b3d3d1a36"
-}
+{"nome": "vini", "telefone": "32994875689", "cpf": "07341725087", "cep": "12345678", "paswd": "3cdea1b06e8f4c08213ca4cbd702a27871914c971ee226cf9debf88b8435c375"}
+{"nome": "vidigal", "telefone": "32991234567", "cpf": "07341725087", "cep": "12345678", "paswd": "db66f04ad63cfd801dfdf3fbb5fed510a3d9f0b99e36a7d42e40155f88fd7eda"}
